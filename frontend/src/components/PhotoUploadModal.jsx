@@ -114,7 +114,7 @@ export const PhotoUploadModal = ({ user, isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
-      <div className="fixed inset-0 bg-black/90 bg-opacity-50 transition-opacity" onClick={onClose}></div>
+      <div className="fixed inset-0 bg-black/80 bg-opacity-50 transition-opacity" onClick={onClose}></div>
       <div className="flex items-center justify-center min-h-screen p-4">
         <div className="relative bg-white rounded-lg shadow-xl max-w-lg w-full mx-auto">
           <div className="px-6 py-4 border-b border-gray-200">
@@ -166,7 +166,7 @@ export const PhotoUploadModal = ({ user, isOpen, onClose }) => {
                   <img
                     src={previewUrl}
                     alt="Preview"
-                    className="max-w-full max-h-full mx-auto object-contain"
+                    className="flex w-full h-full mx-auto object-contain"
                   />
                 </div>
 

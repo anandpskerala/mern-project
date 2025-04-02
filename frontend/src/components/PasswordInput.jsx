@@ -10,7 +10,7 @@ export const PasswordInput = ({ name, password, setPassword, handleBlur, touched
         type={showPassword ? "text" : "password"}
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        onBlur={() => handleBlur(name)}
+        onBlur={() => handleBlur && handleBlur(name)}
         className={`w-full px-4 py-2 border ${touched?.[name] && errors?.[name] ? "border-red-500" : "border-gray-300"} outline-none rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors pr-10`}
         placeholder={placeholder}
         required

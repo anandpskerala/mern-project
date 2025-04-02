@@ -30,7 +30,7 @@ export const PasswordModal = ({ user, isOpen, onClose }) => {
 
   return (
     isOpen && (
-      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="fixed inset-0 flex items-center justify-center bg-black/80 bg-opacity-50 z-50">
         <div className="bg-white rounded-lg shadow-lg p-6 w-96">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             Change Password

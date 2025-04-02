@@ -23,8 +23,16 @@ VITE_CLOUD_NAME=Get it from cloudinary
 
 ```
 
+`NOTE: Create .env file for each backend and frontend`
+
 ## Requirements
 
 - pnpm
 - Node.js
+- React JS
 - Express
+- Redux toolkit
+- JWT
+- TailwindCSS
+- Cloudinary
+- axios

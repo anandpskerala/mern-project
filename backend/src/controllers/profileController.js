@@ -41,7 +41,7 @@ export const changePassword = async (req, res) => {
         }
         const salt = await bcrypt.genSalt(12);
         const hashedPassword = await bcrypt.hash(newPassword, salt);
-        await userModel.updateOne({ _id: id }, { password: hashedPassword});
+        await userModel.updateOne({ _id: id }, { $set: {password: hashedPassword} });
         return res.status(200).json({message: "Password changed"});
     } catch (error) {
         console.error("Error in editing changing password: ", error);

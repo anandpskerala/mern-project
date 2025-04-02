@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { logout } from "../redux/actions/auth/logout";
 import { Loader } from "./Loader";
 
-export const NavBar = () => {
+export const NavBar = ({name, link}) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
     const { user, loading } = useSelector((state) => state.auth);
@@ -25,7 +25,7 @@ export const NavBar = () => {
 
     return (
         <nav className="fixed top-0 w-full bg-white text-gray-800 py-4 px-6 flex justify-between items-center shadow-md z-30">
-            <Link to="/" className="text-2xl font-semibold">Home</Link>
+            <Link to={link} className="text-2xl font-semibold">{name}</Link>
 
             <div className="relative" ref={dropdownRef}>
                 <button

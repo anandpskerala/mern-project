@@ -78,7 +78,7 @@ export const ProfilePage = () => {
 
     return (
         <>
-            <NavBar />
+            <NavBar name={"Home"} link={"/"} />
             <div className="min-h-screen bg-gray-200 mt-15">
                 <div className="max-w-3xl mx-auto py-8 px-4 sm:px-6">
                     <div className="bg-white shadow-sm rounded-lg mb-6">

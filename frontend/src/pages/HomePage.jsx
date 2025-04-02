@@ -4,7 +4,7 @@ import { NavBar } from '../components/NavBar';
 export const HomePage = () => {
   return (
     <>
-      <NavBar />
+      <NavBar name={"Home"} link={"/"} />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 text-gray-800">
         <section className="flex flex-col items-center justify-center h-screen text-center px-4 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-10 rounded-lg blur-3xl"></div>

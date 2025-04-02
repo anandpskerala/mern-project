@@ -291,25 +291,6 @@ export const AuthPage = () => {
                             {loading ? (isLogin ? 'Logging...' : 'Creating...') : (isLogin ? 'Login' : 'Create Account')}
                         </button>
                     </form>
-
-                    <div className="relative flex items-center my-6">
-                        <div className="flex-grow border-t border-gray-300"></div>
-                        <span className="flex-shrink mx-4 text-gray-600 text-sm">or continue with</span>
-                        <div className="flex-grow border-t border-gray-300"></div>
-                    </div>
-
-                    <div className="flex justify-center">
-                        <button className="flex w-full justify-center gap-3 items-center py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="#EA4335" d="M12 5c1.617 0 3.064.556 4.207 1.669l3.121-3.121C17.456 1.901 14.872 1 12 1 7.371 1 3.375 3.915 1.511 8.017l3.57 2.898C6.244 7.757 8.883 5 12 5z" />
-                                <path fill="#4285F4" d="M23.5 12.25c0-.989-.081-1.692-.25-2.5h-11v5h6.362c-.118 1.154-.863 2.878-2.55 4.034l3.391 2.825c2-1.872 3.047-4.634 3.047-7.359z" />
-                                <path fill="#FBBC05" d="M5.081 14.089l-3.570 2.898C3.374 21.085 7.371 24 12 24c2.872 0 5.456-.9 7.328-2.546l-3.391-2.825C14.51 19.795 12.867 20.5 12 20.5c-3.117 0-5.757-2.758-6.902-6.411z" />
-                                <path fill="#34A853" d="M12 24c4.629 0 8.623-2.915 10.489-7.015l-3.57-2.898C17.755 17.244 15.117 20 12 20c-3.117 0-5.757-2.758-6.902-6.411L1.511 15.985C3.374 21.085 7.371 24 12 24z" />
-                            </svg>
-                            <span>Google</span>
-                        </button>
-                    </div>
-
                     <p className="mt-8 text-center text-sm text-gray-600">
                         {isLogin ? "Don't have an account? " : "Already have an account? "}
                         <button

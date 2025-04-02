@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { ProtectedRoute } from "./ProtectedRoute";
 import { AuthRedirect } from "./AuthRedirect";
@@ -9,6 +9,7 @@ import { AuthPage } from "../pages/AuthPage";
 import { AdminPage } from '../pages/AdminPage';
 import { ProfilePage } from '../pages/ProfilePage';
 import { Loader } from '../components/Loader';
+import { NotFoundErrorPage } from '../pages/NotFoundErrorPage';
 
 
 export const AppRoutes = () => {
@@ -28,6 +29,8 @@ export const AppRoutes = () => {
       <Route element={<AdminRoute user={user} />}>
         <Route path='/admin/dashboard' element={<AdminPage />} />
       </Route>
+
+      <Route path='*' element={<NotFoundErrorPage />} />
     </Routes>
   );
 }
